@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <ul>
+        <li *ngFor="let deducible of deducibles">
+            <div class="galeria">
+                
+                <div class="foto">
+                    
+                    <p class="card-text">Nombre del Negocio: <b>{{deducible.title}}</b></p>
+                    <img src="{{deducible.Image}}" alt="">
+                    <a class="btn" href="{{deducible.ruta}}">{{deducible.boton}}</a>
+                   
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="container-footer">	
+
+        <footer>
+            <hr>
+            <h4>Universidad Politécnica Salesiana</h4>
+    
+        </footer>
+    </div>
+</body>
+</html>
